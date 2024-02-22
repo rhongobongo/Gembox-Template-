@@ -1,0 +1,124 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{0AA03BB8-A298-4113-B056-073CF91E000A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>W4_Actual</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\ProjectEvaluation\w4act gembox spreadsheet.metadata.v7.bin" />
+    <None Include=".vs\ProjectEvaluation\w4act gembox spreadsheet.projects.v7.bin" />
+    <None Include=".vs\W4Act Gembox Spreadsheet\DesignTimeBuild\.dtbcache.v2" />
+    <None Include=".vs\W4Act Gembox Spreadsheet\FileContentIndex\05638019-e34d-49e9-80d1-af87e57d793a.vsidx" />
+    <None Include=".vs\W4Act Gembox Spreadsheet\FileContentIndex\d5ec7d3f-a58a-41a8-a8e0-5009d051fff3.vsidx" />
+    <None Include=".vs\W4Act Gembox Spreadsheet\v17\.futdcache.v2" />
+    <None Include=".vs\W4Act Gembox Spreadsheet\v17\.suo" />
+    <None Include="W4Act Gembox Spreadsheet\bin\Debug\net6.0-windows\Output.xlsx" />
+    <None Include="W4Act Gembox Spreadsheet\bin\Debug\net6.0-windows\runtimes\osx\native\libHarfBuzzSharp.dylib" />
+    <None Include="W4Act Gembox Spreadsheet\bin\Debug\net6.0-windows\runtimes\osx\native\libSkiaSharp.dylib" />
+    <None Include="W4Act Gembox Spreadsheet\bin\Debug\net6.0-windows\W4Act Gembox Spreadsheet.deps.json" />
+    <None Include="W4Act Gembox Spreadsheet\bin\Debug\net6.0-windows\W4Act Gembox Spreadsheet.runtimeconfig.json" />
+    <None Include="W4Act Gembox Spreadsheet\obj\Debug\net6.0-windows\W4Act Gembox Spreadsheet.AssemblyInfoInputs.cache" />
+    <None Include="W4Act Gembox Spreadsheet\obj\Debug\net6.0-windows\W4Act Gembox Spreadsheet.assets.cache" />
+    <None Include="W4Act Gembox Spreadsheet\obj\Debug\net6.0-windows\W4Act Gembox Spreadsheet.csproj.AssemblyReference.cache" />
+    <None Include="W4Act Gembox Spreadsheet\obj\Debug\net6.0-windows\W4Act Gembox Spreadsheet.csproj.BuildWithSkipAnalyzers" />
+    <None Include="W4Act Gembox Spreadsheet\obj\Debug\net6.0-windows\W4Act Gembox Spreadsheet.csproj.CopyComplete" />
+    <None Include="W4Act Gembox Spreadsheet\obj\Debug\net6.0-windows\W4Act Gembox Spreadsheet.csproj.CoreCompileInputs.cache" />
+    <None Include="W4Act Gembox Spreadsheet\obj\Debug\net6.0-windows\W4Act Gembox Spreadsheet.csproj.GenerateResource.cache" />
+    <None Include="W4Act Gembox Spreadsheet\obj\Debug\net6.0-windows\W4Act Gembox Spreadsheet.designer.deps.json" />
+    <None Include="W4Act Gembox Spreadsheet\obj\Debug\net6.0-windows\W4Act Gembox Spreadsheet.designer.runtimeconfig.json" />
+    <None Include="W4Act Gembox Spreadsheet\obj\Debug\net6.0-windows\W4Act Gembox Spreadsheet.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="W4Act Gembox Spreadsheet\obj\Debug\net6.0-windows\W4Act Gembox Spreadsheet.genruntimeconfig.cache" />
+    <None Include="W4Act Gembox Spreadsheet\obj\project.assets.json" />
+    <None Include="W4Act Gembox Spreadsheet\obj\project.nuget.cache" />
+    <None Include="W4Act Gembox Spreadsheet\obj\W4Act Gembox Spreadsheet.csproj.nuget.dgspec.json" />
+    <None Include="W4Act Gembox Spreadsheet\obj\W4Act Gembox Spreadsheet.csproj.nuget.g.props" />
+    <None Include="W4Act Gembox Spreadsheet\obj\W4Act Gembox Spreadsheet.csproj.nuget.g.targets" />
+    <None Include="W4Act Gembox Spreadsheet\W4Act Gembox Spreadsheet.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="W4Act Gembox Spreadsheet\Form1.cs" />
+    <Compile Include="W4Act Gembox Spreadsheet\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="W4Act Gembox Spreadsheet\obj\Debug\net6.0-windows\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="W4Act Gembox Spreadsheet\obj\Debug\net6.0-windows\W4Act Gembox Spreadsheet.AssemblyInfo.cs" />
+    <Compile Include="W4Act Gembox Spreadsheet\obj\Debug\net6.0-windows\W4Act Gembox Spreadsheet.GlobalUsings.g.cs" />
+    <Compile Include="W4Act Gembox Spreadsheet\Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="W4Act Gembox Spreadsheet\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="W4Act Gembox Spreadsheet\obj\Debug\net6.0-windows\W4Act_Gembox_Spreadsheet.Form1.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="W4Act Gembox Spreadsheet\bin\Debug\net6.0-windows\BouncyCastle.Cryptography.dll" />
+    <Content Include="W4Act Gembox Spreadsheet\bin\Debug\net6.0-windows\GemBox.Spreadsheet.dll" />
+    <Content Include="W4Act Gembox Spreadsheet\bin\Debug\net6.0-windows\HarfBuzzSharp.dll" />
+    <Content Include="W4Act Gembox Spreadsheet\bin\Debug\net6.0-windows\runtimes\win-arm64\native\libHarfBuzzSharp.dll" />
+    <Content Include="W4Act Gembox Spreadsheet\bin\Debug\net6.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll" />
+    <Content Include="W4Act Gembox Spreadsheet\bin\Debug\net6.0-windows\runtimes\win-x64\native\libHarfBuzzSharp.dll" />
+    <Content Include="W4Act Gembox Spreadsheet\bin\Debug\net6.0-windows\runtimes\win-x64\native\libSkiaSharp.dll" />
+    <Content Include="W4Act Gembox Spreadsheet\bin\Debug\net6.0-windows\runtimes\win-x86\native\libHarfBuzzSharp.dll" />
+    <Content Include="W4Act Gembox Spreadsheet\bin\Debug\net6.0-windows\runtimes\win-x86\native\libSkiaSharp.dll" />
+    <Content Include="W4Act Gembox Spreadsheet\bin\Debug\net6.0-windows\SixLabors.Fonts.dll" />
+    <Content Include="W4Act Gembox Spreadsheet\bin\Debug\net6.0-windows\SixLabors.ImageSharp.dll" />
+    <Content Include="W4Act Gembox Spreadsheet\bin\Debug\net6.0-windows\SixLabors.ImageSharp.Drawing.dll" />
+    <Content Include="W4Act Gembox Spreadsheet\bin\Debug\net6.0-windows\SkiaSharp.dll" />
+    <Content Include="W4Act Gembox Spreadsheet\bin\Debug\net6.0-windows\W4Act Gembox Spreadsheet.dll" />
+    <Content Include="W4Act Gembox Spreadsheet\bin\Debug\net6.0-windows\W4Act Gembox Spreadsheet.exe" />
+    <Content Include="W4Act Gembox Spreadsheet\bin\Debug\net6.0-windows\W4Act Gembox Spreadsheet.pdb" />
+    <Content Include="W4Act Gembox Spreadsheet\obj\Debug\net6.0-windows\apphost.exe" />
+    <Content Include="W4Act Gembox Spreadsheet\obj\Debug\net6.0-windows\refint\W4Act Gembox Spreadsheet.dll" />
+    <Content Include="W4Act Gembox Spreadsheet\obj\Debug\net6.0-windows\ref\W4Act Gembox Spreadsheet.dll" />
+    <Content Include="W4Act Gembox Spreadsheet\obj\Debug\net6.0-windows\W4Act Gembox Spreadsheet.csproj.FileListAbsolute.txt" />
+    <Content Include="W4Act Gembox Spreadsheet\obj\Debug\net6.0-windows\W4Act Gembox Spreadsheet.dll" />
+    <Content Include="W4Act Gembox Spreadsheet\obj\Debug\net6.0-windows\W4Act Gembox Spreadsheet.pdb" />
+    <Content Include="W4Act Gembox Spreadsheet\W4Act Gembox Spreadsheet.csproj.user" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\W4 Actual\v17\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
