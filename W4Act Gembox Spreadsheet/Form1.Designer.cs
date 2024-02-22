@@ -1,6 +1,6 @@
 ﻿namespace W4Act_Gembox_Spreadsheet
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,23 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dgvClassList = new DataGridView();
+            dgvList = new DataGridView();
             btnLoad = new Button();
             btnSave = new Button();
-            ((System.ComponentModel.ISupportInitialize)dgvClassList).BeginInit();
+            btnAddInput = new Button();
+            labelTitle = new Label();
+            ((System.ComponentModel.ISupportInitialize)dgvList).BeginInit();
             SuspendLayout();
             // 
-            // dgvClassList
+            // dgvList
             // 
-            dgvClassList.AllowUserToAddRows = false;
-            dgvClassList.AllowUserToDeleteRows = false;
-            dgvClassList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvClassList.Location = new Point(12, 12);
-            dgvClassList.Name = "dgvClassList";
-            dgvClassList.ReadOnly = true;
-            dgvClassList.RowTemplate.Height = 25;
-            dgvClassList.Size = new Size(776, 378);
-            dgvClassList.TabIndex = 0;
+            dgvList.AllowUserToAddRows = false;
+            dgvList.AllowUserToDeleteRows = false;
+            dgvList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvList.Location = new Point(12, 56);
+            dgvList.Name = "dgvList";
+            dgvList.ReadOnly = true;
+            dgvList.RowTemplate.Height = 25;
+            dgvList.Size = new Size(776, 334);
+            dgvList.TabIndex = 0;
             // 
             // btnLoad
             // 
@@ -66,25 +68,48 @@
             btnSave.UseVisualStyleBackColor = true;
             btnSave.Click += btnSave_Click;
             // 
-            // Form1
+            // btnAddInput
+            // 
+            btnAddInput.Location = new Point(12, 396);
+            btnAddInput.Name = "btnAddInput";
+            btnAddInput.Size = new Size(103, 42);
+            btnAddInput.TabIndex = 3;
+            btnAddInput.Text = "Add Input";
+            btnAddInput.UseVisualStyleBackColor = true;
+            btnAddInput.Click += btnAddInput_Click;
+            // 
+            // labelTitle
+            // 
+            labelTitle.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            labelTitle.Location = new Point(12, 9);
+            labelTitle.Name = "labelTitle";
+            labelTitle.Size = new Size(302, 44);
+            labelTitle.TabIndex = 4;
+            labelTitle.Text = "Lorem ipsum dolor\r\n";
+            // 
+            // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(labelTitle);
+            Controls.Add(btnAddInput);
             Controls.Add(btnSave);
             Controls.Add(btnLoad);
-            Controls.Add(dgvClassList);
-            Name = "Form1";
-            Text = "Form1";
+            Controls.Add(dgvList);
+            Name = "MainForm";
+            Text = "Lorem ipsum dolor";
             Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)dgvClassList).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvList).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private DataGridView dgvClassList;
+        private DataGridView dgvList;
         private Button btnLoad;
         private Button btnSave;
+        private Button btnAddInput;
+        private Label labelTitle;
     }
 }

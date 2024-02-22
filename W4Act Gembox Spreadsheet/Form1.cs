@@ -1,13 +1,14 @@
 using GemBox.Spreadsheet;
 using GemBox.Spreadsheet.WinFormsUtilities;
 using System.Diagnostics;
+using System.Windows.Forms;
 
 namespace W4Act_Gembox_Spreadsheet
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-
-        public Form1()
+        public string variable1;
+        public MainForm()
         {
             InitializeComponent();
         }
@@ -16,6 +17,14 @@ namespace W4Act_Gembox_Spreadsheet
         private void Form1_Load(object sender, EventArgs e)
         {
             SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY");
+            string[] columnNames = { "Column 1", "Column 2", "Column 3", "C4", "C5" }; // Example column names
+
+            foreach (string columnName in columnNames)
+            {
+                DataGridViewTextBoxColumn column = new DataGridViewTextBoxColumn();
+                column.HeaderText = columnName; 
+                dgvList.Columns.Add(column);
+            }
         }
 
         private void btnLoad_Click(object sender, EventArgs e)
@@ -38,7 +47,7 @@ namespace W4Act_Gembox_Spreadsheet
 
                 DataGridViewConverter.ExportToDataGridView(
                 worksheet,
-                this.dgvClassList,
+                this.dgvList,
                 new ExportToDataGridViewOptions() { ColumnHeaders = true }
             );
 
@@ -80,7 +89,7 @@ namespace W4Act_Gembox_Spreadsheet
 
                 DataGridViewConverter.ImportFromDataGridView(
                     worksheet,
-                    this.dgvClassList,
+                    this.dgvList,
                     new ImportFromDataGridViewOptions() { ColumnHeaders = true }
                     );
                 workbook.Save(saveFileDialog.FileName);
@@ -88,6 +97,23 @@ namespace W4Act_Gembox_Spreadsheet
 
         }
 
+        private void btnAddInput_Click(object sender, EventArgs e)
+        {
+            DataInfoForm dataInfoForm = new DataInfoForm(this);
+            dataInfoForm.FormClosed += DataInfoForm_FormClosed;
+            dataInfoForm.Show();
+            this.Enabled = false; 
+        }
 
+      
+        private void DataInfoForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Enabled = true;
+        }
+
+        internal void AddRows(DataGridViewRow row)
+        {
+            dgvList.Rows.Add(row);
+        }
     }
 }
